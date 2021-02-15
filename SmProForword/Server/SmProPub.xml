@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmProPub</name>
+    </assembly>
+    <members>
+        <member name="T:ConsoleG.Core.com.setting.FanYi">
+            <summary>
+            执行翻译
+            </summary>
+        </member>
+        <member name="M:ConsoleG.Core.com.setting.FanYi.frome(System.String,System.Object[])">
+            <summary>
+            根据系统语言翻译
+            </summary>
+            <param name="ve">文本</param>
+            <param name="obj">其他参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ConsoleG.Core.com.setting.FanYi.frome(System.String,System.String,System.Object[])">
+            <summary>
+            根据自己的语言翻译
+            </summary>
+            <param name="ve">文本</param>
+            <param name="lauge">语言</param>
+            <param name="obj">其他参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ConsoleG.Core.com.setting.FanYi.fromepk(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            根据标记找到程序的翻译包
+            </summary>
+            <param name="pk">语言包</param>
+            <param name="ve">文本</param>
+            <param name="lauge">语言</param>
+            <param name="obj">其他参数</param>
+            <returns></returns>
+        </member>
+        <member name="F:SmProPub.IndexObjectType.TypeConsole">
+            <summary>
+            注册为控制台
+            </summary>
+        </member>
+        <member name="F:SmProPub.IndexObjectType.TypeWindow">
+            <summary>
+            它是SmPro的窗口程序
+            </summary>
+        </member>
+        <member name="F:SmProPub.IndexObjectType.TypeIndex">
+            <summary>
+            其他窗口
+            </summary>
+        </member>
+        <member name="M:SmProPub.MakeArggi.returnTyli">
+            <summary>
+            返回制作前的数值(非List)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.MakeArggi.returnTminuts">
+            <summary>
+            返回所有在此列表的的值(null外)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.MakeArggi.returnListValue">
+            <summary>
+            返回值，与arg对应
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.MakeArggi.returnListArg">
+            <summary>
+            返回Arg，与值对应
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.MakeArggi.returnArgisr(System.String)">
+            <summary>
+            在数值组中，有几个arg(需要区分大小写)
+            </summary>
+            <param name="ve">值</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.MakeArggi.returnTi(System.String)">
+            <summary>
+            在数值组中，对应的arg数值（如果没有则null）(区分大小写)
+            </summary>
+            <param name="ve">值</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.MakeArggi.returnTiInt(System.String)">
+            <summary>
+            返回第一个匹配值在列表中排第几(零开始引索)(如果没有返回-1)
+            </summary>
+            <param name="ve"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.MakeArggi.returnTi(System.String,System.String)">
+            <summary>
+            在数值组中，对应的arg数值（如果没有已默认的方式返回）(区分大小写)
+            </summary>
+            <param name="ve">值</param>
+            <param name="returnabout">返回的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.MakeArggi.run(System.String[],System.Int32,System.Char,System.Char)">
+            <summary>
+            执行制造
+            </summary>
+            <param name="gm">初始值，通常为args</param>
+            <param name="cont">开始时的值引索</param>
+            <param name="tu">在前面的标记</param>
+            <param name="st">分开为string[]的char</param>
+        </member>
+        <member name="M:SmProPub.MemoryFrome.FormatSize(System.Double)">
+            <summary>
+            格式化容量大小
+            </summary>
+            <param name="size">容量（B）</param>
+            <returns>已格式化的容量</returns>
+        </member>
+        <member name="M:SmProPub.MemoryFrome.FormatSizedouble(System.Double)">
+            <summary>
+            格式化容量大小
+            </summary>
+            <param name="size">容量（B）</param>
+            <returns>已格式化的容量</returns>
+        </member>
+        <member name="T:SmProPub.SmException">
+            <summary>
+            这是一个限于SmProPub中的错误解释
+            </summary>
+        </member>
+        <member name="P:SmProPub.SmException.Debug">
+            <summary>
+            解决方法
+            </summary>
+        </member>
+        <member name="P:SmProPub.SmException.ID">
+            <summary>
+            错误ID
+            </summary>
+        </member>
+        <member name="P:SmProPub.SmException.CodeLine">
+            <summary>
+            解决的代码行
+            </summary>
+        </member>
+        <member name="P:SmProPub.SmException.message">
+            <summary>
+            说明信息
+            </summary>
+        </member>
+        <member name="P:SmProPub.SmException.FailWhy">
+            <summary>
+            为什么失败
+            </summary>
+        </member>
+        <member name="M:SmProPub.SmException.#ctor">
+            <summary>
+            新建SmPro的错误解决
+            </summary>
+        </member>
+        <member name="M:SmProPub.SmException.#ctor(System.Exception)">
+            <summary>
+            新建SmPro融合解释外部解释
+            </summary>
+            <param name="ex">合并的项目</param>
+        </member>
+        <member name="M:SmProPub.SmException.#ctor(SmProPub.SmException)">
+            <summary>
+            新建SmPro融合解释外部解释
+            </summary>
+            <param name="ex">合并的项目</param>
+        </member>
+        <member name="P:SmProPub.SmException.Message">
+            <summary>
+            获取返回的错误信息
+            </summary>
+        </member>
+        <member name="P:SmProPub.SmException.HelpMessage">
+            <summary>
+            获取全部的帮助信息
+            </summary>
+        </member>
+        <member name="M:SmProPub.SmException.#ctor(System.String)">
+            <summary>
+            直接使用错误表达
+            </summary>
+            <param name="message">信息</param>
+        </member>
+        <member name="M:SmProPub.SmException.#ctor(System.String,System.Int32)">
+            <summary>
+            直接使用错误表达
+            </summary>
+            <param name="message">信息</param>
+            <param name="ID">错误ID</param>
+        </member>
+        <member name="M:SmProPub.SmException.#ctor(System.String,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            标准的解释
+            </summary>
+            <param name="message">信息</param>
+            <param name="Debug">解决方法</param>
+            <param name="ID">错误ID</param>
+            <param name="CodeLine">解决行</param>
+            <param name="FailWhy">为什么</param>
+        </member>
+        <member name="M:SmProPub.SmException.Clear">
+            <summary>
+            重置表达
+            </summary>
+        </member>
+        <member name="M:SmProPub.SmException.RunSmProEx">
+            <summary>
+            制作错误，返回执行类(可以直接用throw)
+            </summary>
+        </member>
+        <member name="M:SmProPub.SmException.ChangeHResult(System.Int32)">
+            <summary>
+            篡改HResult输出
+            </summary>
+            <param name="hresult">新的HResult更改</param>
+        </member>
+        <member name="T:SmProPub.UtilPrintf">
+            <summary>
+            系统的输出
+            </summary>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.RestColor">
+            <summary>
+            重置颜色
+            </summary>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.#ctor">
+            <summary>
+            初始化值
+            </summary>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.#ctor(System.Object)">
+            <summary>
+            初始化值（不会显示）
+            </summary>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.StartLinster">
+            <summary>
+            在此程序开启日志监听
+            </summary>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.StartLinster(System.Diagnostics.Process)">
+            <summary>
+            指定监听程序
+            </summary>
+            <param name="po"></param>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.SetThreadsecond(System.Int32)">
+            <summary>
+            设置监听等待流入秒数
+            </summary>
+            <param name="max"></param>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.SetFilesAboutWrite(System.String)">
+            <summary>
+            设置文件（默认为时间）
+            </summary>
+            <param name="file"></param>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.StartWrite">
+            <summary>
+            执行监听！
+            </summary>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.Stopping">
+            <summary>
+            立刻停止，并写入结尾
+            </summary>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.Printf(SmProPub.UtilControl,SmProPub.UtilPrintf@,System.String,System.Object[])">
+            <summary>
+            可执行log,使用Console方法，输出
+            </summary>
+            <param name="message"></param>
+            <param name="args"></param>
+            <param name="u"></param>
+            <param name="f"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.Printf(System.String,SmProPub.UtilControl,SmProPub.UtilPrintf@)">
+            <summary>
+            执行Log写入，并输出
+            </summary>
+            <param name="message"></param>
+            <param name="u"></param>
+            <param name="f"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.Printf(System.String,SmProPub.UtilPrintf@)">
+            <summary>
+            执行Log,并输出
+            </summary>
+            <param name="message"></param>
+            <param name="f"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.Printf(System.String,System.String,SmProPub.UtilControl,SmProPub.UtilPrintf@)">
+            <summary>
+            可执行log,使用Console方法，输出
+            </summary>
+            <param name="message"></param>
+            <param name="args"></param>
+            <param name="u"></param>
+            <param name="f"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.Printf(System.String)">
+            <summary>
+            Printf输出(无标识默认Info)（不会计入日志）
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.Printf(System.Int32)">
+            <summary>
+            Printf输出(无标识默认Info)（不会计入日志）
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.Printf(System.Boolean)">
+            <summary>
+            Printf输出(无标识默认Info)（不会计入日志）
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.Printf(System.String,SmProPub.UtilControl)">
+            <summary>
+            Printf输出(设置标识UtilControl的输出)（不会计入日志）
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.Printf(System.Int32,SmProPub.UtilControl)">
+            <summary>
+            Printf输出(设置标识UtilControl的输出)（不会计入日志）
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.Printf(System.Boolean,SmProPub.UtilControl)">
+            <summary>
+            Printf输出(设置标识UtilControl的输出)（不会计入日志）
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.Printf(System.Object,SmProPub.UtilControl)">
+            <summary>
+            Printf输出(设置标识UtilControl的输出，Object建议不要)（不会计入日志）
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:SmProPub.UtilPrintf.WriteLogAbout">
+            <summary>
+            立刻写入缓存
+            </summary>
+        </member>
+        <member name="T:SmProPub.UtilControl">
+            <summary>
+            系统的输出标识
+            </summary>
+        </member>
+        <member name="F:SmProPub.UtilControl.Info">
+            <summary>
+            标准的信息
+            </summary>
+        </member>
+        <member name="F:SmProPub.UtilControl.Warn">
+            <summary>
+            标准的警告
+            </summary>
+        </member>
+        <member name="F:SmProPub.UtilControl.Error">
+            <summary>
+            标准的错误
+            </summary>
+        </member>
+    </members>
+</doc>

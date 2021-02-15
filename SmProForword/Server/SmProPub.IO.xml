@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmProPub.IO</name>
+    </assembly>
+    <members>
+        <member name="M:ConsoleG.Core.com.LoadProgram.CreativeMemoryty.ClearMemory">
+            <summary>
+            清空产生的内存垃圾
+            </summary>
+        </member>
+        <member name="M:ConsoleG.Core.com.LoadProgram.CreativeMemoryty.CreativeMemory(SmProPub.UtilPrintf@,ConsoleG.Core.com.LoadProgram.CreativleMemorySetting)">
+            <summary>
+            创建分配，成功为0，失败为-1,有日志写入
+            </summary>
+            <param name="name"></param>
+            <param name="maxMB"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ConsoleG.Core.com.LoadProgram.CreativeMemoryty.CreativeMemory(ConsoleG.Core.com.LoadProgram.CreativleMemorySetting)">
+            <summary>
+            创建分配，成功为0，失败为-1
+            </summary>
+            <param name="name"></param>
+            <param name="maxMB"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ConsoleG.Core.com.LoadProgram.CreativeMemoryty.ExistsMemoryFile(System.String)">
+            <summary>
+            知道是否创建了内存流
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ConsoleG.Core.com.LoadProgram.CreativeMemoryty.DisposeCreativeMemory(System.String)">
+            <summary>
+            释放储存，失败为-1，成功为0
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ConsoleG.Core.com.LoadProgram.CreativeMemoryty.Close">
+            <summary>
+            关闭内存缓存,之后为null
+            </summary>
+        </member>
+        <member name="M:ConsoleG.Core.com.LoadProgram.CreativeMemoryty.#ctor(System.String)">
+            <summary>
+            创建SmPro的内存文件读写
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:ConsoleG.Core.com.LoadProgram.CreativeMemoryty.syreturn">
+            <summary>
+            返回信息字符为Json String
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ConsoleG.Core.com.LoadProgram.CreativeMemoryty.syreturn``1">
+            <summary>
+            返回信息字符为Class Object class
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ConsoleG.Core.com.LoadProgram.CreativeMemoryty.LogUpTheMemory(System.String,System.String)">
+            <summary>
+            如果读取有账号密码，则需要登录它，会以bool返回是否登录
+            </summary>
+            <param name="user"></param>
+            <param name="passworld"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ConsoleG.Core.com.LoadProgram.CreativeMemoryty.RunMake">
+            <summary>
+            重新写入内存（请确保缓存正确！）
+            </summary>
+        </member>
+        <member name="M:ConsoleG.Core.com.LoadProgram.CreativeMemoryty.returnAll">
+            <summary>
+            返回全部
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ConsoleG.Core.com.LoadProgram.CreativeMemoryty.returnValeByte">
+            <summary>
+            返回值他为byte[]不会包含信息字符
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ConsoleG.Core.com.LoadProgram.CreativeMemoryty.returnsl">
+            <summary>
+            返回他的信息字符
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ConsoleG.Core.com.LoadProgram.CreativeMemoryty.setValue(System.Byte[])">
+            <summary>
+            设置元素（此方法非常安全）
+            </summary>
+            <param name="bt"></param>
+        </member>
+        <member name="M:ConsoleG.Core.com.LoadProgram.CreativeMemoryty.setValueALL(System.Byte[])">
+            <summary>
+            设置所有元素
+            </summary>
+            <param name="bk"></param>
+        </member>
+        <member name="M:ConsoleG.Core.com.LoadProgram.CreativeMemoryty.returnSeting">
+            <summary>
+            返回信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ConsoleG.Core.com.LoadProgram.CreativeMemoryty.Creativestr">
+            <summary>
+            创建byte内存
+            </summary>
+            <param name="min">最小的读取</param>
+            <param name="max">最大的读取</param>
+        </member>
+        <member name="T:SmProPub.IO.RunEnvVoid">
+            <summary>
+            提供运行环境的接口
+            </summary>
+            <param name="path">返回的执行环境</param>
+        </member>
+        <member name="T:SmProPub.IO.EnvironmentRunTemp">
+            <summary>
+            在一个线程中用两个环境(会高占用CPU)(执行时会开启线程)
+            </summary>
+        </member>
+        <member name="P:SmProPub.IO.EnvironmentRunTemp.RunPath">
+            <summary>
+            执行时的返回类
+            </summary>
+        </member>
+        <member name="P:SmProPub.IO.EnvironmentRunTemp.IsBackThread">
+            <summary>
+            是否为后台线程
+            </summary>
+        </member>
+        <member name="P:SmProPub.IO.EnvironmentRunTemp.Aty">
+            <summary>
+            执行时是否阻塞线程
+            </summary>
+        </member>
+        <member name="P:SmProPub.IO.EnvironmentRunTemp.Str">
+            <summary>
+            设置等待超时
+            </summary>
+        </member>
+        <member name="M:SmProPub.IO.EnvironmentRunTemp.#ctor(System.String,SmProPub.IO.RunEnvVoid)">
+            <summary>
+            声明初始化
+            </summary>
+            <param name="vc">声明返回</param>
+            <param name="path">环境执行</param>
+        </member>
+        <member name="M:SmProPub.IO.EnvironmentRunTemp.RunStart(System.Object[])">
+            <summary>
+            绑定线程
+            </summary>
+            <returns>返回参数</returns>
+        </member>
+        <member name="T:SmProPub.IO.MemoryFile">
+            <summary>
+            访问缓冲内存转储文件(目前使用Json标头)
+            </summary>
+        </member>
+        <member name="F:SmProPub.IO.MemoryFile.FreeMemory">
+            <summary>
+            获取分配控件写入标题的字节
+            </summary>
+        </member>
+        <member name="F:SmProPub.IO.MemoryFile.EndSprit">
+            <summary>
+            获取分割节点
+            </summary>
+        </member>
+        <member name="M:SmProPub.IO.MemoryFile.OpenInDisShare(System.String)">
+            <summary>
+            使用非共享模式打开内存转储文件
+            </summary>
+            <param name="filepath">转储文件位置</param>
+            <returns>标准的操作写入</returns>
+        </member>
+        <member name="M:SmProPub.IO.MemoryFile.OpenInShare(System.String)">
+            <summary>
+            使用共享模式打开内存转储文件
+            </summary>
+            <param name="filepath">转储文件位置</param>
+            <returns>标准的操作写入</returns>
+        </member>
+        <member name="M:SmProPub.IO.MemoryFile.CreatFile(System.String,SmProPub.IO.MemoryFileHeader,System.Boolean)">
+            <summary>
+            创建内存转储文件并指定是否打开共享
+            </summary>
+            <param name="filepath">转储文件位置</param>
+            <param name="memoryFileHeader">文件表头</param>
+            <param name="fileshare">是否共享</param>
+            <returns>标准的操作写入</returns>
+        </member>
+        <member name="P:SmProPub.IO.MemoryFile.MemoryFileHeader">
+            <summary>
+            获取设置文件表头
+            </summary>
+        </member>
+        <member name="P:SmProPub.IO.MemoryFile.FreeLess">
+            <summary>
+            获取可利用空间
+            </summary>
+        </member>
+        <member name="M:SmProPub.IO.MemoryFile.OverrideWriteHeader">
+            <summary>
+            重新写入表头
+            </summary>
+        </member>
+        <member name="M:SmProPub.IO.MemoryFile.GetMemoryFileGetOpexc">
+            <summary>
+            获取所有保存数据(此操作会更新链接表)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.IO.MemoryFile.GetOpexcs">
+            <summary>
+            获取数据链接表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.IO.MemoryFile.EqualsOpexc(SmProPub.IO.MemoryFileGetOpexc)">
+            <summary>
+            验证这个子表头是否是正确的
+            </summary>
+            <param name="memoryFileGetOpexc">验证的子表头</param>
+            <returns>一个布尔值表达是否成功</returns>
+        </member>
+        <member name="M:SmProPub.IO.MemoryFile.Write(System.Byte[],System.Int32,System.Int32,SmProPub.IO.MemoryFileGetOpexc)">
+            <summary>
+            写入数据表达
+            </summary>
+            <param name="butter">写入的数据</param>
+            <param name="outindex">从0开始的偏移量</param>
+            <param name="endup">结束偏移量</param>
+            <param name="memoryFileGetOpexc">操作数据表头</param>
+        </member>
+        <member name="M:SmProPub.IO.MemoryFile.Read(System.Byte[],System.Int32,System.Int32,SmProPub.IO.MemoryFileGetOpexc)">
+            <summary>
+            读取数据表达
+            </summary>
+            <param name="butter">读取的数据</param>
+            <param name="outindex">从0开始的偏移量</param>
+            <param name="endup">结束偏移量</param>
+            <param name="memoryFileGetOpexc">操作数据表头</param>
+        </member>
+        <member name="M:SmProPub.IO.MemoryFile.CreativeMemory(System.Int32,System.String,System.Boolean)">
+            <summary>
+            分配新的空间(此操作会更新链接表)
+            </summary>
+            <param name="gertoffec">分配空间</param>
+            <param name="name">分配空间标记名称</param>
+            <param name="protect">是否保护数据</param>
+        </member>
+        <member name="M:SmProPub.IO.MemoryFile.DeleteMemory(SmProPub.IO.MemoryFileGetOpexc)">
+            <summary>
+            删除空间(此操作会更新链接表)
+            </summary>
+            <param name="memoryFileGetOpexc">操作数据表头</param>
+        </member>
+        <member name="M:SmProPub.IO.MemoryFile.AutoPutLocation">
+            <summary>
+            自动调整位置，强行把删除空间时剩余空间释放归位(此操作会更新链接表)
+            </summary>
+        </member>
+        <member name="M:SmProPub.IO.MemoryFile.Dispose">
+            <summary>
+            释放由<see cref="T:SmProPub.IO.MemoryFile"/>转储资源
+            </summary>
+        </member>
+        <member name="T:SmProPub.IO.MemoryFileHeader">
+            <summary>
+            表达该文件的文件头,无法继承
+            </summary>
+        </member>
+        <member name="P:SmProPub.IO.MemoryFileHeader.HeaderName">
+            <summary>
+            获取设置转储文件标题名称
+            </summary>
+        </member>
+        <member name="P:SmProPub.IO.MemoryFileHeader.FreeByte">
+            <summary>
+            获取给他分配的空间
+            </summary>
+        </member>
+        <member name="P:SmProPub.IO.MemoryFileHeader.FreeSubHeader">
+            <summary>
+            分配子项时填写的数据预留大小
+            </summary>
+        </member>
+        <member name="P:SmProPub.IO.MemoryFileHeader.LastWriteTime">
+            <summary>
+            获取最后一次正确写入的时间
+            </summary>
+        </member>
+        <member name="P:SmProPub.IO.MemoryFileHeader.DeleteAtOpen">
+            <summary>
+            获取一个值，表示是否删除空间在打开和关闭时
+            </summary>
+        </member>
+        <member name="T:SmProPub.IO.MemoryFileGetOpexc">
+            <summary>
+            表达该文件每一个记录,无法继承
+            </summary>
+        </member>
+        <member name="P:SmProPub.IO.MemoryFileGetOpexc.PositionStart">
+            <summary>
+            表达数据开始位置(从表达头开始)
+            </summary>
+        </member>
+        <member name="P:SmProPub.IO.MemoryFileGetOpexc.PositionEnd">
+            <summary>
+            表达数据结束位置
+            </summary>
+        </member>
+        <member name="P:SmProPub.IO.MemoryFileGetOpexc.Protect">
+            <summary>
+            表达是否保护这个数据链
+            </summary>
+        </member>
+        <member name="P:SmProPub.IO.MemoryFileGetOpexc.Name">
+            <summary>
+            表达数据标记
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmProPub.System</name>
+    </assembly>
+    <members>
+        <member name="T:System.SmProPub.ExClass.Class`1">
+            <summary>
+            SmProPub Class执行操作
+            </summary>
+        </member>
+        <member name="M:System.SmProPub.ExClass.Class`1.GetAssembly">
+            <summary>
+            获取这个<seealso cref="!:T"/>的执行信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:System.SmProPub.ExClass.Class`1.GetAssembly(`0)">
+            <summary>
+            带参数获取这个<seealso cref="!:T"/>的执行信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:System.SmProPub.ExClass.Class`1.#ctor">
+            <summary>
+            Class操作控件
+            </summary>
+        </member>
+        <member name="T:System.SmProPub.ExClass.Class`1.Java">
+            <summary>
+            模拟Java的几个关键词
+            </summary>
+        </member>
+        <member name="M:System.SmProPub.ExClass.Class`1.Java.Finl(System.Object,System.String)">
+            <summary>
+            模拟Java的Finl关键词，储存(如果写入请指明Object类否则使用null)
+            </summary>
+            <param name="obj">声明的T类</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.SmProPub.ExClass.Class`1.Java.IfFinl(System.String)">
+            <summary>
+            判断是否可以用Finl关键词
+            </summary>
+            <param name="fi"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.SmProPub.ExClass.Class`1.Serialize(`0)">
+            <summary> 
+            序列化Class为Byte[](直接转换)
+            </summary> 
+            <param name="data">要序列化的对象</param> 
+            <returns>返回存放序列化后的数据缓冲区</returns> 
+        </member>
+        <member name="M:System.SmProPub.ExClass.Class`1.Deserialize(System.Byte[])">
+            <summary> 
+            反序列化Byte[]为Class(直接转换)
+            </summary> 
+            <param name="data">数据缓冲区</param> 
+            <returns>对象</returns> 
+        </member>
+        <member name="M:System.SmProPub.ExClass.Class`1.Struct2Bytes(System.Object)">
+            <summary>
+            序列化
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.SmProPub.ExClass.Class`1.Bytes2Struct(System.Byte[])">
+            <summary>
+            反序列化
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.SmProPub.ExClass.ObjectClass`1">
+            <summary>
+            SmPro Sub 为Class的操作做贡献
+            </summary>
+        </member>
+        <member name="M:System.SmProPub.ExClass.ObjectClass`1.#ctor">
+            <summary>
+            新建一个Object Class
+            </summary>
+        </member>
+        <member name="P:System.SmProPub.ExClass.ObjectClass`1.GetIndexl">
+            <summary>
+            Save To Memory
+            </summary>
+        </member>
+        <member name="M:System.SmProPub.ExClass.ObjectClass`1.SaveInMemory(`0)">
+            <summary>
+            Save In Program
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:System.SmProPub.ExClass.ObjectClass`1.DisopseInMemory(`0)">
+            <summary>
+            Kill In Program
+            </summary>
+            <param name="obj">Kill Object</param>
+        </member>
+        <member name="P:System.SmProPub.ExClass.ObjectClass`1.IDX">
+            <summary>
+            Save To Memory Name
+            </summary>
+        </member>
+        <member name="T:System.SmProPub.ExClass.ObjectClass`1.ObjectClassDispose">
+            <summary>
+            释放系统资源的时候先执行的自定义释放
+            </summary>
+        </member>
+        <member name="T:System.SmProPub.ExClass.ObjectClass`1.ObjectClassThrow">
+            <summary>
+            系统最近引发错误时事件
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="T:System.SmProPub.ExClass.ObjectClass`1.ObjectClassArg">
+            <summary>
+            执行自定义的方法
+            </summary>
+        </member>
+        <member name="E:System.SmProPub.ExClass.ObjectClass`1.StaticSaveAdd">
+            <summary>
+            在共享内存重新写入时触发
+            </summary>
+        </member>
+        <member name="E:System.SmProPub.ExClass.ObjectClass`1.DisposeEvent">
+            <summary>
+            绑定在释放资源时自定义释放
+            </summary>
+        </member>
+        <member name="E:System.SmProPub.ExClass.ObjectClass`1.ThrowExceptionClass">
+            <summary>
+            系统引发的异常在执行时(ThrowException必须为true才可以)
+            </summary>
+        </member>
+        <member name="E:System.SmProPub.ExClass.ObjectClass`1.ObjectClassArg5">
+            <summary>
+            执行全部绑定的void
+            </summary>
+        </member>
+        <member name="P:System.SmProPub.ExClass.ObjectClass`1.Name">
+            <summary>
+            声明的名称
+            </summary>
+        </member>
+        <member name="P:System.SmProPub.ExClass.ObjectClass`1.ThrowException">
+            <summary>
+            是否在程序引发异常时引发(false)或保存(true)
+            </summary>
+        </member>
+        <member name="P:System.SmProPub.ExClass.ObjectClass`1.SaveExceptionThrow">
+            <summary>
+            保存的异常
+            </summary>
+        </member>
+        <member name="P:System.SmProPub.ExClass.ObjectClass`1.SaveObject">
+            <summary>
+            提供保存(需要时可以从这调用)
+            </summary>
+        </member>
+        <member name="M:System.SmProPub.ExClass.ObjectClass`1.Dispose">
+            <summary>
+            释放使用的资源执行(不管你是托管的还是非托管的)
+            </summary>
+        </member>
+        <member name="M:System.SmProPub.ExClass.ObjectClass`1.throwex(System.Exception)">
+            <summary>
+            收集错误
+            </summary>
+            <param name="ex"></param>
+        </member>
+        <member name="M:System.SmProPub.ExClass.ObjectClass`1.Assebmly">
+            <summary>
+            获取执行的Type
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:System.SmProPub.ExClass.ObjectClass`1.ToString">
+            <summary>
+            返回执行的类名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:System.SmProPub.Event.EventHandler">
+            <summary>
+            Window窗体处理消息
+            </summary>
+        </member>
+        <member name="E:System.SmProPub.Event.EventHandler.ChangeObject">
+            <summary>
+            当任何控件活动时引发的事件<para>通常标记为(C*)</para>
+            </summary>
+        </member>
+        <member name="E:System.SmProPub.Event.EventHandler.ChangeObjectSave">
+            <summary>
+            当继承的Save发生改变时引发事件
+            </summary>
+        </member>
+        <member name="E:System.SmProPub.Event.EventHandler.ChangeObjectName">
+            <summary>
+            当继承的Name发生变化时
+            </summary>
+        </member>
+        <member name="P:System.SmProPub.Event.EventHandler.Save">
+            <summary>
+            重写的Save
+            </summary>
+        </member>
+        <member name="P:System.SmProPub.Event.EventHandler.Name">
+            <summary>
+            重写的Name
+            </summary>
+        </member>
+        <member name="M:System.SmProPub.Event.EventHandler.SenderMsg(System.Object)">
+            <summary>
+            (C*)重新定义消息发送
+            </summary>
+        </member>
+        <member name="T:System.SmProPub.Event.ObjectEventArg">
+            <summary>
+            引发事件
+            </summary>
+            <param name="sender">在基于ObjectEvent方法返回的结果</param>
+            <param name="o">基于ObjectEvent</param>
+        </member>
+        <member name="T:System.SmProPub.Event.ObjectEvent">
+            <summary>
+            新的事件总称
+            </summary>
+        </member>
+        <member name="M:System.SmProPub.Event.ObjectEvent.#ctor">
+            <summary>
+            初始化ObjectEvent
+            </summary>
+        </member>
+        <member name="E:System.SmProPub.Event.ObjectEvent.ObjectEventArg">
+            <summary>
+            绑定事件(不确保可以正常写入内存)
+            </summary>
+        </member>
+        <member name="M:System.SmProPub.Event.ObjectEvent.#ctor(System.Int32*)">
+            <summary>
+            初始化ObjectEvent数值(此方法并非安全，因为用到C++的模拟组件)
+            <para>异常:</para>
+            <see cref="!:SmException"/><para><see cref="T:System.Exception"/></para>
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="P:System.SmProPub.Event.ObjectEvent.Save">
+            <summary>
+            保存自定义在内存
+            </summary>
+        </member>
+        <member name="P:System.SmProPub.Event.ObjectEvent.Name">
+            <summary>
+            获取或设置事件名称(此事件可以被保存在内存中方便提取)
+            </summary>
+        </member>
+        <member name="P:System.SmProPub.Event.ObjectEvent.Comment">
+            <summary>
+            说明事件
+            </summary>
+        </member>
+        <member name="M:System.SmProPub.Event.ObjectEvent.CreativeMemorySave(System.SmProPub.Event.ObjectEvent)">
+            <summary>
+            保存在内存
+            </summary>
+        </member>
+        <member name="M:System.SmProPub.Event.ObjectEvent.GetMemorySaveNG">
+            <summary>
+            得到在内存分配的
+            <para>异常:<para /><see cref="T:System.Exception"/></para>
+            </summary>
+            <returns>返回一个保存在内部的class</returns>
+        </member>
+        <member name="M:System.SmProPub.Event.ObjectEvent.SenderMsg(System.Object,System.SmProPub.Event.ObjectEvent)">
+            <summary>
+            向事件发送消息
+            </summary>
+            <param name="sender">消息类</param>
+        </member>
+    </members>
+</doc>

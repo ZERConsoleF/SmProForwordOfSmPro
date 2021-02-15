@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmProPub.Text</name>
+    </assembly>
+    <members>
+        <member name="T:SmProPub.Text.ByteSearch">
+            <summary>
+            搜索Byte的查找
+            </summary>
+        </member>
+        <member name="M:SmProPub.Text.ByteSearch.EmptyBytes(System.Byte[])">
+            <summary>
+            删除空字符(00字符)
+            </summary>
+            <param name="beffer">操控的项目</param>
+        </member>
+        <member name="M:SmProPub.Text.ByteSearch.EmptyBytes(System.Byte[],System.Byte)">
+            <summary>
+            删除哪些字符
+            </summary>
+            <param name="beffer">操控项目</param>
+            <param name="delete">删除的字节</param>
+        </member>
+        <member name="M:SmProPub.Text.ByteSearch.SpritByte(System.Byte[],System.Int64,System.Int64)">
+            <summary>
+            截取某一段的字节
+            </summary>
+            <param name="beffer">截取目标字节</param>
+            <param name="index">偏移量</param>
+            <param name="size">截取大小(结束位置)</param>
+            <returns>完整的截取</returns>
+        </member>
+        <member name="M:SmProPub.Text.ByteSearch.SpritBytes(System.Byte[],System.Byte[])">
+            <summary>
+            当探测到字节中出现比较字节时，从这拆分这个字节
+            </summary>
+            <param name="buffer">目标字节</param>
+            <param name="equelByte">比较字节</param>
+            <returns>拆分字节</returns>
+        </member>
+        <member name="M:SmProPub.Text.ByteSearch.EquelsByte(System.Byte[],System.Byte[])">
+            <summary>
+            将<see langword="byte"/>a与b比较是否在第一字节到b的字节中是否相等(目标为a)
+            </summary>
+            <param name="a">目标判断</param>
+            <param name="b">判断例子</param>
+            <returns>第一字节到b的字节中是否相等</returns>
+        </member>
+        <member name="M:SmProPub.Text.ByteSearch.FormatByteFormLong(System.Int64)">
+            <summary>
+            将<see langword="long"/>为字节
+            </summary>
+            <param name="aber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.Text.ByteSearch.FormatLongFormByte(System.Byte[])">
+            <summary>
+            把<see langword="byte"/>为数字
+            </summary>
+            <param name="bco"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.Text.ByteSearch.CopyIn(System.Byte[],System.Byte[],System.Int64,System.Int64)">
+            <summary>
+            把<see langword="byte"/>复制到目标
+            </summary>
+            <param name="buffer">目标字节</param>
+            <param name="incopy">参考复制到目标字节的字节</param>
+            <param name="index">偏移量</param>
+            <param name="size">复制大小</param>
+        </member>
+        <member name="T:SmProPub.Text.Linq.ListFof`1">
+            <summary>
+            基于<see cref="T:System.Collections.Generic.List`1"/>可视化自定义(事件)操作
+            </summary>
+        </member>
+        <member name="M:SmProPub.Text.Linq.ListFof`1.Add(`0)">
+            <summary>
+            将对象添加到 System.Collections.Generic.List`1 的结尾处。
+            </summary>
+            <param name="item">要添加到 System.Collections.Generic.List`1 末尾的对象。 对于引用类型，该值可以为 null。</param>
+        </member>
+        <member name="E:SmProPub.Text.Linq.ListFof`1.OnAdding">
+            <summary>
+            在添加项目时(通常还未添加)
+            </summary>
+        </member>
+        <member name="T:SmProPub.Text.Linq.ListFofAddItemEvent">
+            <summary>
+            新建项目触发事件
+            </summary>
+        </member>
+        <member name="P:SmProPub.Text.Linq.ListFofAddItemEvent.AddItem">
+            <summary>
+            添加项目
+            </summary>
+        </member>
+        <member name="P:SmProPub.Text.Linq.ListFofAddItemEvent.TypeOf">
+            <summary>
+            添加类型
+            </summary>
+        </member>
+        <member name="P:SmProPub.Text.Linq.ListFofAddItemEvent.HasPass">
+            <summary>
+            一个值表示是否处理项目(如果为<see langword="true"/>则不操作)
+            </summary>
+        </member>
+        <member name="T:SmProPub.Text.Linq.ListFofAddItemsEvent">
+            <summary>
+            新建项目触发事件
+            </summary>
+        </member>
+        <member name="P:SmProPub.Text.Linq.ListFofAddItemsEvent.AddItems">
+            <summary>
+            添加项目
+            </summary>
+        </member>
+        <member name="P:SmProPub.Text.Linq.ListFofAddItemsEvent.TypeOf">
+            <summary>
+            添加类型
+            </summary>
+        </member>
+        <member name="P:SmProPub.Text.Linq.ListFofAddItemsEvent.HasPass">
+            <summary>
+            一个值表示是否处理项目(如果为<see langword="true"/>则不操作)
+            </summary>
+        </member>
+        <member name="T:SmProPub.Text.NewMath">
+            <summary>
+            新的数学计算
+            </summary>
+        </member>
+        <member name="M:SmProPub.Text.NewMath.AdsoValueAtInt(System.Double)">
+            <summary>
+            绝对值
+            </summary>
+            <param name="valueat">一个数</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.Text.NewMath.RadSignValueAtInt(System.Int32,System.Int32)">
+            <summary>
+            对这个数开平方
+            </summary>
+            <param name="valueat">非负数</param>
+            <param name="havepoint">保留几位小数</param>
+            <returns></returns>
+        </member>
+        <member name="T:SmProPub.Text.String64">
+            <summary>
+            操控在String中的String64,可以声明<see langword="string"/>这类,不可继承，详细见官网的String64
+            </summary>
+        </member>
+        <member name="M:SmProPub.Text.String64.MakeArg(System.String)">
+            <summary>
+            制作标准的Args
+            </summary>
+            <param name="arg">一个标准的arg</param>
+            <returns>标准的Args</returns>
+        </member>
+        <member name="M:SmProPub.Text.String64.MakeArg(System.String,System.Char)">
+            <summary>
+            制作自定义的Args
+            </summary>
+            <param name="arg">一个标准的arg</param>
+            <param name="ftext">分割标识</param>
+            <returns>标准的Args</returns>
+        </member>
+        <member name="M:SmProPub.Text.String64.MakeArg(System.String,System.Char,System.Char)">
+            <summary>
+            制作自定义的Args
+            </summary>
+            <param name="arg">一个标准的arg</param>
+            <param name="ftext">分割标识</param>
+            <param name="setext">暂时取消分割标识</param>
+            <returns>标准的Args</returns>
+        </member>
+        <member name="M:SmProPub.Text.String64.FormatOverride(System.String,System.String,System.String)">
+            <summary>
+            替换指定文本(支持多项)
+            </summary>
+            <param name="arg">原文本</param>
+            <param name="begin">在文本中需要替换的<see cref="T:System.String"/>字符</param>
+            <param name="after">替换后文本标志</param>
+            <returns></returns>
+        </member>
+        <member name="P:SmProPub.Text.String64.Empty">
+            <summary>
+            返回空的值
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:SmProPub.Text.String64.Length" -->
+        <member name="P:SmProPub.Text.String64.Item(System.Int32)">
+            <summary>
+            更改设置值
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.Text.String64.#ctor">
+            <summary>
+            空序列
+            </summary>
+        </member>
+        <member name="M:SmProPub.Text.String64.#ctor(System.String)">
+            <summary>
+            新的序列
+            </summary>
+            <param name="v"></param>
+        </member>
+        <member name="M:SmProPub.Text.String64.#ctor(System.Char[])">
+            <summary>
+            转化为string储存
+            </summary>
+            <param name="v"></param>
+        </member>
+        <member name="M:SmProPub.Text.String64.Format(System.String,System.Object[])">
+            <summary>
+            将指定字符串中的格式项替换为指定数组中相应对象的字符串表示形式。
+            </summary>
+            <param name="text">符合格式的string</param>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.Text.String64.Lock">
+            <summary>
+            锁定，拒绝任何写入允许读出
+            </summary>
+        </member>
+        <member name="M:SmProPub.Text.String64.UnLock">
+            <summary>
+            解除锁定
+            </summary>
+        </member>
+        <member name="M:SmProPub.Text.String64.c_str">
+            <summary>
+            返回char*
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.Text.String64.c_change(System.Int32,System.Char)">
+            <summary>
+            更改组在配对的值
+            </summary>
+            <param name="idex"></param>
+            <param name="y"></param>
+        </member>
+        <member name="T:SmProPub.Text.SIBB`1">
+            <summary>
+            声明的变量，转换总和
+            </summary>
+        </member>
+        <member name="T:SmProPub.Text.StringSearch">
+            <summary>
+            搜索string文本
+            </summary>
+        </member>
+        <member name="M:SmProPub.Text.StringSearch.SearchStringInFormat(System.String,System.String)">
+            <summary>
+            查找文本出现重复的百分比
+            </summary>
+            <param name="arg">文本</param>
+            <param name="begin">对比文本</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.Text.StringSearch.FormatString(System.String,System.Char,System.Char,System.Char)">
+            <summary>
+            制作自定义的Args
+            </summary>
+            <param name="arg">一个标准的arg</param>
+            <param name="ftext">分割标识</param>
+            <param name="setext1">暂时取消分割标识1</param>
+            <param name="setext2">暂时取消分割标识2</param>
+            <returns>标准的Args</returns>
+        </member>
+        <member name="M:SmProPub.Text.StringSearch.FormatString(System.String,System.Char,System.Char,System.Char,System.Int32)">
+            <summary>
+            制作自定义的Args
+            </summary>
+            <param name="arg">一个标准的arg</param>
+            <param name="ftext">分割标识</param>
+            <param name="setext1">暂时取消分割标识1</param>
+            <param name="setext2">暂时取消分割标识2</param>
+            <param name="backtrue">分割几次取消分割(0表示无限)</param>
+            <returns>标准的Args</returns>
+        </member>
+        <member name="M:SmProPub.Text.StringSearch.FormatIB(System.Int64,System.String)">
+            <summary>
+            使用I Byte计算方式并带单位最大(1024计算最大)
+            </summary>
+            <param name="byteslong">一个byte容量</param>
+            <param name="uotr">保留几位小数的<see cref="T:System.Double"/>形式</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.Text.StringSearch.FormatB(System.Int64,System.String)">
+            <summary>
+            使用Byte计算方式并带单位最大(1000计算最大)
+            </summary>
+            <param name="byteslong">一个byte容量</param>
+            <param name="uotr">保留几位小数的<see cref="T:System.Double"/>形式</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.Text.StringSearch.FormatRepp(System.Int64,System.Int32,System.String[],System.String)">
+            <summary>
+            连除法，当小于特定的值后，输出数值和单位
+            </summary>
+            <param name="byteslong">一个数</param>
+            <param name="tro">连除进制</param>
+            <param name="ftr">单位</param>
+            <param name="uotr">保留几位小数的<see cref="T:System.Double"/>形式</param>
+            <returns></returns>
+        </member>
+        <member name="M:SmProPub.Text.StringSearch.FormatRfd(System.String,System.Text.Encoding)">
+            <summary>
+            在文本中的符合转义符字符转为转义符
+            </summary>
+            <param name="abct">处理文本</param>
+            <returns>标准的转义文本</returns>
+        </member>
+    </members>
+</doc>
