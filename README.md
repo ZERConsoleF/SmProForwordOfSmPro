@@ -5,15 +5,15 @@
 在Linux和Mac等系统上运行需支持库
    mono6.3.x
 
-说明
-   工具
+说明:
+   工具:
       Client:
          关于Forword转发客户端
       Server:
          关于Forword转发客户端的连接点
       CreativeCAI:
          创建连接服务点的证书
-   参数
+   参数:
       work.ini
          IPAdress:创建连接点或制造连接点的IP
          Port:创建或连接的端口
