@@ -5,8 +5,8 @@
 # 在Linux和Mac等系统上运行需支持库
    mono6.3.x
 
-说明:
-   工具:
+# 说明:
+   # 工具:
       Client:
          关于Forword转发客户端
       Server:
